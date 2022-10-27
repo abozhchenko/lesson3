@@ -10,3 +10,13 @@ then
     echo "Strings are the same"
 else
     echo "Strings are not the same"
+
+if [[ $STRING1 =~ [$LETTER] && $STRING2 =~ [$LETTER] ]]
+    then
+        echo "Both strings contain the search letter"
+    elif [[ $STRING1 =~ [$LETTER] || $STRING2 =~ [$LETTER] ]]
+    then
+        echo "Only one of the string contain the search letter "
+    else
+        echo "Strings do not contain the searched letter"
+fi
