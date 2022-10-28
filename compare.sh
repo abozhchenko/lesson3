@@ -11,12 +11,12 @@ then
 else
     echo "Strings are not the same"
 
-if [[ $STRING1 =~ [$LETTER] && $STRING2 =~ [$LETTER] ]]
+if [[ $STRING1 =~ [$SYMBOL] && $STRING2 =~ [$SYMBOL] ]]
     then
-        echo "Both strings contain the search letter"
-    elif [[ $STRING1 =~ [$LETTER] || $STRING2 =~ [$LETTER] ]]
+        echo "Both strings contain the search symbol"
+    elif [[ $STRING1 =~ [$SYMBOL] || $STRING2 =~ [$SYMBOL] ]]
     then
-        echo "Only one of the string contain the search letter "
+        echo "Only one of the string contain the search symbol "
     else
-        echo "Strings do not contain the searched letter"
+        echo "Strings do not contain the searched symbol"
 fi
