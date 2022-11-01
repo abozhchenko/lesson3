@@ -4,6 +4,9 @@ echo "Please enter string #1: "
 read STRING1
 echo "Please enter string #2: "
 read STRING2
+echo "Please enter the letter you are looking for :"
+read SYMBOL
+
 
 if [[ "$STRING1" == "$STRING2" ]]
 then
